@@ -1,0 +1,111 @@
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+/* Added media queries for responsiveness */
+@media (max-width: 1200px) {
+    #MyBtn1, #MyBtn2 {
+        width: 12vw;
+        height: 5vh;
+        font-size: 0.8rem;
+    }
+    .copyCode {
+        font-size: 1.2rem;
+        height: 40px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 780px) {
+    #MyBtn1, #MyBtn2 {
+        width: 18vw;
+        height: 4vh;
+        font-size: 0.6rem;
+    }
+    .copyCode {
+        font-size: 1rem;
+        height: 40px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) { /* added new media query for smaller screens */
+    #MyBtn1, #MyBtn2 {
+        width: 25vw;
+        height: 3vh;
+        font-size: 0.4rem;
+    }
+    .copyCode {
+        font-size: 0.8rem;
+        height: 30px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+#MyBtn1{
+    background-color: rgb(168, 235, 18);
+    color: rgb(34, 34, 34);
+    width: 8vw;
+    height: 7vh;
+    border-radius: 3rem;
+    font-size: 1rem;
+}
+
+
+#MyBtn2{
+    background-color: rgb(168, 235, 18);
+    color: rgb(34, 34, 34);
+    width: 8vw;
+    height: 7vh;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+.copyCode{
+    font-size: 1.5rem;
+    border-left: 2px solid white; /* changed 'whitesmoke' to 'white' and added 'solid' */
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5); /* added transparent white background */
+    text-align: center;
+}
+
+
+@media (max-width: 912px) {
+    #MyBtn1, #MyBtn2 {
+        width: 20vw;
+        height: 4.5vh;
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem; /* added padding to ensure text fits inside the button */
+        box-sizing: border-box; /* added box-sizing to include padding in width calculation */
+    }
+    .copyCode {
+        font-size: 1.1rem;
+        height: 40px;
+    }
+}
